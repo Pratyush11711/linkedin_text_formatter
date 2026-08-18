@@ -1,0 +1,66 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-canvas border-t border-hairline py-12 md:py-16 text-body text-xs mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      
+      <!-- Brand column -->
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-6 h-6 rounded bg-ink text-on-primary font-bold text-xs flex items-center justify-center">
+            in
+          </div>
+          <span class="font-bold text-sm text-ink tracking-tight">
+            Free LinkedIn Text Formatter Tool
+          </span>
+        </div>
+        <p class="text-body text-xs max-w-md leading-relaxed mb-4">
+          A free, privacy-first online text formatter for styling post text with bold, italic, script, doublestruck, underline, and list Unicode fonts for LinkedIn, Instagram, Facebook, Discord, and WhatsApp.
+        </p>
+        <div class="inline-flex items-center gap-2 text-[11px] font-mono text-mute bg-canvas-soft border border-hairline px-3 py-1.5 rounded-md">
+          <span>Domain: freelinkedintextformatter.com</span>
+        </div>
+      </div>
+
+      <!-- Supported Platforms SEO links -->
+      <div>
+        <h4 class="font-semibold text-ink text-xs uppercase tracking-wider mb-3">
+          Free Text Formatter Tools
+        </h4>
+        <ul class="space-y-2 text-body">
+          <li><a href="/#how-it-works" class="hover:text-ink transition-colors">LinkedIn Text Formatter</a></li>
+          <li><a href="/#how-it-works" class="hover:text-ink transition-colors">Instagram Text Formatter</a></li>
+          <li><a href="/#how-it-works" class="hover:text-ink transition-colors">Facebook Text Formatter</a></li>
+          <li><a href="/#how-it-works" class="hover:text-ink transition-colors">Discord Text Formatter</a></li>
+          <li><a href="/#how-it-works" class="hover:text-ink transition-colors">WhatsApp Text Formatter</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal & Company Links -->
+      <div>
+        <h4 class="font-semibold text-ink text-xs uppercase tracking-wider mb-3">
+          Company & Legal
+        </h4>
+        <ul class="space-y-2 text-body">
+          <li><a href="/about" class="hover:text-ink transition-colors">About Us</a></li>
+          <li><a href="/privacy" class="hover:text-ink transition-colors">Privacy Policy</a></li>
+          <li><a href="/terms" class="hover:text-ink transition-colors">Terms & Conditions</a></li>
+          <li><a href="/contact" class="hover:text-ink transition-colors">Contact Us</a></li>
+          <li><a href="/#faq" class="hover:text-ink transition-colors">FAQ</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    {/* Bottom Copyright & Disclaimer */}
+    <div class="pt-8 border-t border-hairline flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-mute">
+      <p>© {currentYear} Free LinkedIn Text Formatter. All rights reserved.</p>
+      <p>
+        Not affiliated with, endorsed by, or sponsored by LinkedIn Corporation.
+      </p>
+    </div>
+
+  </div>
+</footer>

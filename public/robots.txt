@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow internal & error pages
+Disallow: /404
+Disallow: /500
+
+# Host & Sitemap location
+Host: https://freelinkedintextformatter.com
+Sitemap: https://freelinkedintextformatter.com/sitemap.xml

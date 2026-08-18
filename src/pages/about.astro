@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="About Us — Free LinkedIn Text Formatter"
+  description="Learn about the mission behind the Free LinkedIn Text Formatter tool. We empower creators, founders, and professionals to format social media post text with zero signups or paywalls."
+>
+  <section class="py-12 md:py-16 bg-canvas">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      {/* Header */}
+      <div class="mb-10 border-b border-hairline pb-8">
+        <span class="text-xs font-mono text-ink bg-canvas-soft border border-hairline px-3 py-1 rounded-md uppercase tracking-wider">
+          Our Mission & Story
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-ink mt-3">
+          About Us
+        </h1>
+        <p class="text-body text-xs sm:text-sm font-sans mt-2">
+          Empowering social media creators with fast, free, privacy-first text formatting tools.
+        </p>
+      </div>
+
+      {/* About Content */}
+      <div class="space-y-8 text-body text-sm leading-relaxed font-sans">
+        
+        <div class="bg-canvas-soft border border-hairline rounded-xl p-6 md:p-8">
+          <h2 class="text-xl font-bold text-ink mb-3">Why We Built This Tool</h2>
+          <p class="mb-3">
+            Social media platforms like LinkedIn, Instagram, and Facebook serve millions of posts every day. However, their native post editors only support plain text, lacking built-in buttons for <strong>bold, italic, underline, script, or custom bullet lists</strong>.
+          </p>
+          <p>
+            Creators were forced to navigate slow, ad-cluttered websites with paywalls just to format a single headline. We built <strong>Free LinkedIn Text Formatter</strong> to give creators, marketers, and professionals a lightning-fast, 100% free tool that respects user privacy.
+          </p>
+        </div>
+
+        {/* Core Pillars */}
+        <div>
+          <h2 class="text-2xl font-bold text-ink tracking-tight mb-6">Our Core Principles</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-canvas-soft border border-hairline rounded-xl p-5">
+              <div class="w-8 h-8 rounded-md bg-ink text-on-primary font-bold text-xs flex items-center justify-center mb-3">
+                01
+              </div>
+              <h3 class="font-bold text-ink text-base mb-1">100% Free Forever</h3>
+              <p class="text-xs text-body leading-relaxed">
+                No credit cards, no premium tiers, no hidden paywalls, and no account signups required.
+              </p>
+            </div>
+
+            <div class="bg-canvas-soft border border-hairline rounded-xl p-5">
+              <div class="w-8 h-8 rounded-md bg-ink text-on-primary font-bold text-xs flex items-center justify-center mb-3">
+                02
+              </div>
+              <h3 class="font-bold text-ink text-base mb-1">Privacy-First Engineering</h3>
+              <p class="text-xs text-body leading-relaxed">
+                Your post text is formatted 100% in your browser. Drafts are never sent to external servers or logged.
+              </p>
+            </div>
+
+            <div class="bg-canvas-soft border border-hairline rounded-xl p-5">
+              <div class="w-8 h-8 rounded-md bg-ink text-on-primary font-bold text-xs flex items-center justify-center mb-3">
+                03
+              </div>
+              <h3 class="font-bold text-ink text-base mb-1">Cross-Platform Utility</h3>
+              <p class="text-xs text-body leading-relaxed">
+                Formats Unicode text that works natively on LinkedIn, Instagram, Facebook, Discord, and WhatsApp.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Technical Excellence */}
+        <div class="bg-canvas-soft border border-hairline rounded-xl p-6">
+          <h2 class="text-xl font-bold text-ink mb-3">Designed for Speed & Precision</h2>
+          <p class="mb-3">
+            Built using modern web technologies including Astro static site generation and the Vercel design system ([`DESIGN.md`](file:///e:/linkedin_text_formatter/DESIGN.md)), our application loads in milliseconds and consumes minimal battery and network data on mobile devices.
+          </p>
+          <div class="flex items-center gap-4 text-xs font-mono text-mute pt-3 border-t border-hairline">
+            <span>Framework: Astro SSG</span>
+            <span>•</span>
+            <span>Style: Tailwind v4</span>
+            <span>•</span>
+            <span>Fonts: Geist Sans & Mono</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</Layout>

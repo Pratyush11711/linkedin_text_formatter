@@ -1,0 +1,87 @@
+---
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export const FAQS: FaqItem[] = [
+  {
+    question: "Is LinkedIn text formatter free?",
+    answer: "Yes, 100% free! Our tool has no hidden fees, paid tiers, or account registration requirements—you can format unlimited post text for free anytime."
+  },
+  {
+    question: "What is the best LinkedIn text formatter?",
+    answer: "While several tools exist, our free web utility is a top choice because it supports 21+ Unicode styles, inline range selection formatting, and a live LinkedIn post preview with a see-more cutoff indicator."
+  },
+  {
+    question: "Is there a free online text formatter for LinkedIn?",
+    answer: "Yes! Our tool works directly in any web browser on desktop or mobile without needing to download software or sign up for an account."
+  },
+  {
+    question: "Does LinkedIn have a built-in formatter?",
+    answer: "No, LinkedIn's native post creation box only supports plain text and does not include rich-text toolbar buttons for bold, italic, or custom bullet styles."
+  },
+  {
+    question: "How can I format text online?",
+    answer: "Type or paste your post text into an online Unicode text generator, highlight specific words to apply styles like bold or italic, and copy the formatted text directly into your social media draft."
+  },
+  {
+    question: "How do I open LinkedIn formatter?",
+    answer: "Simply visit freelinkedintextformatter.com in any web browser on your phone, tablet, or computer to start formatting your posts instantly."
+  },
+  {
+    question: "Does LinkedIn have a text editor?",
+    answer: "LinkedIn provides a basic post composer for entering plain text, but it does not offer built-in formatting options for bolding, italicizing, or custom fonts."
+  },
+  {
+    question: "Can I post 1080x1350 on LinkedIn?",
+    answer: "Yes! The 1080x1350 px image size (4:5 portrait ratio) is fully supported on LinkedIn and takes up maximum vertical screen real estate on mobile feeds for higher engagement."
+  },
+  {
+    question: "What is the 4-1-1 rule on LinkedIn?",
+    answer: "The 4-1-1 rule is a content strategy guideline suggesting that for every 6 posts, 4 should be curated educational content, 1 soft self-promotion, and 1 hard sell promotion. It is a popular marketing best practice created by Joe Pulizzi rather than an official LinkedIn policy."
+  },
+  {
+    question: "Which size is best for LinkedIn posts?",
+    answer: "The 1080x1350 px portrait ratio is best for single image posts on mobile feeds, while 1200x627 px is optimal for landscape link preview cards."
+  },
+  {
+    question: "What is the best image size for LinkedIn in 2026?",
+    answer: "For 2026, 1080x1350 px (4:5 aspect ratio) remains the top performing image size for portrait feed posts, while 1080x1080 px (1:1 square ratio) is recommended for carousel PDF documents and multi-image posts."
+  }
+];
+---
+
+<section id="faq" class="py-16 bg-canvas border-t border-hairline">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center mb-12">
+      <span class="text-xs font-mono text-ink bg-canvas-soft border border-hairline px-3 py-1 rounded-md uppercase tracking-wider">
+        Frequently Asked Questions
+      </span>
+      <h2 class="text-2xl sm:text-4xl font-bold text-ink tracking-tight mt-3">
+        LinkedIn Formatting & Best Practices FAQ
+      </h2>
+      <p class="text-body text-xs sm:text-sm mt-2">
+        Everything you need to know about post formatting, image dimensions, and strategy.
+      </p>
+    </div>
+
+    <div class="space-y-3">
+      {FAQS.map((faq, idx) => (
+        <details key={idx} class="bg-canvas-soft border border-hairline rounded-xl p-4 sm:p-5 group [&_summary::-webkit-details-marker]:none transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-sm sm:text-base text-ink list-none">
+            <span>{faq.question}</span>
+            <span class="ml-4 transition-transform group-open:rotate-180 text-mute text-xs">
+              ▼
+            </span>
+          </summary>
+          <p class="text-body text-xs sm:text-sm leading-relaxed mt-3 pt-3 border-t border-hairline">
+            {faq.answer}
+          </p>
+        </details>
+      ))}
+    </div>
+
+  </div>
+</section>
