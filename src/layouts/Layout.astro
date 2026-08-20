@@ -11,7 +11,7 @@ interface Props {
 
 const {
   title = "Free LinkedIn Text Formatter — Bold, Italic & Unicode Font Generator",
-  description = "The ultimate free linkedin text formatter tool. Convert post text into bold, italic, script, and list fonts. Works as an online text formatter for LinkedIn, Instagram, Facebook, Discord, and WhatsApp."
+  description = "The ultimate free LinkedIn text formatter and LinkedIn font generator tool. Convert post text into bold, italic, script, and list styles. Works as an online text formatter & font generator for LinkedIn, Instagram, Facebook, Discord, and WhatsApp."
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, 'https://freelinkedintextformatter.com');
@@ -62,14 +62,17 @@ const faqSchema = {
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+    <link rel="shortcut icon" href="/favicon.ico?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
     <link rel="canonical" href={canonicalURL} />
 
     <!-- Primary Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="keywords" content="linkedin text formatter, free text formatter, text formatter, instagram text formatter, facebook text formatter, text formatter online, online text formatter, discord text formatter, linked in text formatter, linkedin text formatter tool, linkedin text formatter free, text formatter for linkedin, whatsapp text formatter" />
+    <meta name="keywords" content="linkedin text formatter, linkedin font generator, font generator, lettertype, free text formatter, text formatter, instagram text formatter, facebook text formatter, text formatter online, online text formatter, discord text formatter, linked in text formatter, linkedin text formatter tool, linkedin text formatter free, text formatter for linkedin, whatsapp text formatter" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="LinkedIn Text Formatter" />
 
